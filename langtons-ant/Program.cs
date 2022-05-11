@@ -16,5 +16,5 @@ while (true)
     Sim sim = new Sim();
 
     sim.RunSim(numSteps);
+    Console.WriteLine("");
 }
-
