@@ -33,6 +33,7 @@ namespace langtons_ant
         public void Move()
         {
             Square square = _gridHandler.GetSquare(x, y);
+            Console.WriteLine($"Ant: {x}|{y} Direction: {Direction}");
             switch (Direction)
             {
                 case AntDirection.TOP:

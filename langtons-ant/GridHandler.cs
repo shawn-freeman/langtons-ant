@@ -37,18 +37,32 @@
                 if (tempMaxY > maxY) maxY = tempMaxY;
             }
 
+            Console.WriteLine("\r\n***** BEGIN OUTPUT *****");
             var outputString = "";
-            for (var x = minX; x <= maxX; x++)
+
+            for (var y = minY; y <= maxY; y++)
             {
-                for (var y = minY; y <= maxY; y++)
+                for (var x = minX; x <= maxX; x++)
                 {
                     var square = GetSquare(x, y);
                     var colorCharacter = (square.Color == SquareColor.WHITE) ? "W" : "B";
                     outputString += $"[{colorCharacter}]";
                 }
-
                 outputString += "\r\n";
             }
+
+
+            //for (var x = minX; x <= loopX; x++)
+            //{
+            //    for (var y = minY; y <= maxY; y++)
+            //    {
+            //        var square = GetSquare(x, y);
+            //        var colorCharacter = (square.Color == SquareColor.WHITE) ? "W" : "B";
+            //        outputString += $"[{colorCharacter}]";
+
+                    
+            //    }
+            //}
 
             return outputString;
         }
