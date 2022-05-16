@@ -51,19 +51,6 @@
                 outputString += "\r\n";
             }
 
-
-            //for (var x = minX; x <= loopX; x++)
-            //{
-            //    for (var y = minY; y <= maxY; y++)
-            //    {
-            //        var square = GetSquare(x, y);
-            //        var colorCharacter = (square.Color == SquareColor.WHITE) ? "W" : "B";
-            //        outputString += $"[{colorCharacter}]";
-
-                    
-            //    }
-            //}
-
             return outputString;
         }
     }
